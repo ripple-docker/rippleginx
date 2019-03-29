@@ -7,4 +7,4 @@ RUN chmod +x entrypoint.sh
 ENV DOMAIN test.test
 
 ENTRYPOINT [ "./entrypoint.sh" ]
-
+CMD ["nginx", "-g", "daemon off;"]
